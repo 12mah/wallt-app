@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="" />
+    <script>
+        function resize(){
+            //将布局视口大小设为设备像素尺寸
+            var scale = 1 / window.devicePixelRatio;
+            document.querySelector('meta[name="viewport"]').setAttribute('content','width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+            //动态设置html标签的font-size值,并按照设计图的尺寸/100。例如：750的设计图得到的值是7.5;做页面是测量设计图的px尺寸除以100得到rem尺寸;和淘宝的做法一样，文字字体大小不要使用rem换算
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+        };
+        resize();
+        window.onresize = resize;
+    </script>
+    <title></title>
+    <!--公共样式和js-->
+    <link rel="stylesheet" type="text/css" href="../css/public.css"/>
+    <script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<!--当前页面的css-->
+<link rel="stylesheet" type="text/css" href="../css/dependence.css"/>
+    <header class="head-bar">
+        <a href="#" class="back hide"></a>
+        <h1 class="title">信任</h1>
+    </header>
+    <nav class="tab-bar">
+        <a href="#">
+            <span class="icon assets"></span>
+            <span>资产</span>
+        </a>
+        <a href="#">
+            <span class="icon trade"></span>
+            <span>交易</span>
+        </a>
+        <a href="#" class="active">
+            <span class="icon trust"></span>
+            <span>信任</span>
+        </a>
+        <a href="#">
+            <span class="icon my"></span>
+            <span>我的</span>
+        </a>
+    </nav>
+    <section id="content" class="content">
+        <div class="assets-con">
+            <div class="assets-box">
+                <div class="assets-l">
+                    <img src="../img/BTC@2x.png"/><span>BTC</span>
+                </div>
+                <input class="assets-r" type="button" value="信任"></input>
+            </div>
+        </div>
+        <div class="assets-con">
+            <div class="assets-box">
+                <div class="assets-l">
+                    <img src="../img/BTC@2x.png"/><span>ETC</span>
+                </div>
+                <input class="assets-r trusted" type="button" value="已信任"></input>
+            </div>
+        </div>
+    </section>
+<!--当前页面的js-->
+<script src="../js/dependence.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

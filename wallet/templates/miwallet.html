@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="" />
+    <script>
+        function resize(){
+            //将布局视口大小设为设备像素尺寸
+            var scale = 1 / window.devicePixelRatio;
+            document.querySelector('meta[name="viewport"]').setAttribute('content','width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+            //动态设置html标签的font-size值,并按照设计图的尺寸/100。例如：750的设计图得到的值是7.5;做页面是测量设计图的px尺寸除以100得到rem尺寸;和淘宝的做法一样，文字字体大小不要使用rem换算
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+        };
+        resize();
+        window.onresize = resize;
+    </script>
+    <title></title>
+    <!--公共样式和js-->
+    <link rel="stylesheet" type="text/css" href="../css/public.css"/>
+    <script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<!--当前页面的css-->
+<link rel="stylesheet" type="text/css" href="../css/miwallet.css"/>
+  <div class="wallet-header">
+      <div class="miwallet-top">
+      	   <div class="Headportrait"></div>
+      	   <span class="person_W">个人钱包</span>
+      	   <span class="ewallet">Type somethingIDFDX8304</span>
+      </div>   
+      <div class="wallelt-fun">
+  		<span class="Recharge">充值</span>
+  		<span class="Put">提现</span>
+      </div>
+  </div>
+  <div class="wallelt-nav">
+	    <dl>
+	    	<dt><a href="#" class="found"><img src="../img/cj@2x.png"></a></dt>
+	    	<dd>创建钱包</dd>
+	    </dl>
+	    <dl>
+	    	<dt><a href="#" class="import"><img src="../img/dr@2x.png"></a></dt>
+	    	<dd>导入钱包</dd>
+	    </dl>
+	    <dl>
+	    	<dt><a href="#" class="modify"><img src="../img/xg@2x.png"></a></dt>
+	    	<dd>修改密码</dd>
+	    </dl> 
+	    <dl>
+	    	<dt><a href="#" class="help"><img src="../img/bzfk@2x.png"></a></dt>
+	    	<dd>帮助中心</dd>
+	    </dl>
+	    <dl>
+	    	<dt><a href="#" class="Opinion"><img src="../img/yjfk@2x.png"></a></dt>
+	    	<dd>意见反馈</dd>
+	    </dl>
+	    <dl>
+	    	<dt><a href="#" class="about"><img src="../img/gywm@2x.png"></a></dt>
+	    	<dd class="lat">关于我们</dd>
+	    </dl>
+  </div>
+  <div class="quit">
+  	   <span class="quit_out">退出</span>
+  </div>
+<!--当前页面的js-->
+<script src="../js/miwallet.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
