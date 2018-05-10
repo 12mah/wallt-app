@@ -1,0 +1,317 @@
+.wrap {
+	padding-top: 44px;
+}
+/*资产*/
+#assets .record {
+	width:18px;
+	height:20px;
+	margin: 12px 5px 0 0;
+}
+#assets .record img {
+	width:100%;
+	height: auto;
+}
+.assets-topbar {
+	height: 45px;
+	background: #fff;
+	line-height: 45px;
+	padding:0 14px;
+	font-size: 15px;
+	color:#474747;
+	border-bottom: 1px #f1f1f1 solid;
+}
+.assets-con .assets-box {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 0 13px;
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 78px;
+    color:#333;
+    font-size: 12px;
+    background: #fff;
+}
+.assets-con .assets-box .assets-l {
+	font-size: 0;
+}
+.assets-con .assets-box .assets-l * {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+}
+.assets-con .assets-box .assets-l span {
+	padding-left: 10px;
+}
+.assets-con .assets-box .assets-l img {
+	width: 43px;
+	height: auto;
+}
+/*交易*/
+#trade .entrust {
+	font-size: 15px;
+	color: #FFFFFF;
+	margin:10px 5px 0 0;
+}
+.floor div {
+    padding: 5px;
+    height:32px;
+    font-size:14px;
+    color:#666666;
+    line-height:32px;
+    display:flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.content {
+    background-color: #f5f5f5;
+}
+.floor {
+    background-color: #fff;
+    padding: 0 10px 30px 10px;
+}
+.floor div.sole {
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0;
+}
+.line {
+    margin-left: 13px;
+    height:1px;
+    background-color: #f1f1f1;
+}
+.submit {
+    width: 30%;
+    height: 40px;
+    background-color: #087CFD;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: 1px solid #86BFFF;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+.floor input {
+    width:60%;
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+    height:32px;
+    position: relative;
+    float: right;
+    font-size:14px;
+    color:#666666;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    outline:none;
+}
+
+.floor .item {
+    width:60%;
+    border: 1px solid #DFDFDF;
+    border-radius:4px;
+    height:32px;
+    position: relative;
+    float: right;
+    font-size:14px;
+    color:#666666;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    outline:none;
+}
+.floor .item {
+    background:url('../img/_@2x.png') no-repeat right 8px center;
+}
+.floor .item .show {
+    display:none;
+}
+.floor .item ul {
+    z-index: 999;
+    position:relative;
+    top:30px;
+    border:1px solid #9f9999;
+    max-height: 200px;
+    overflow: scroll;
+}
+.floor .item ul li {
+    background-color: #fff;
+    height: 30px;
+    line-height: 30;
+    text-indent: 10px;
+}
+.floor .item ul li:hover {
+    background-color: red;
+}
+/*信任*/
+#trust .assets-con .assets-box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 0 13px;
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 78px;
+    color:#333;
+    font-size: 12px;
+    background: #fff;
+}
+#trust .assets-con .assets-box .assets-l {
+    font-size: 0;
+}
+#trust .assets-con .assets-box .assets-l * {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+}
+#trust .assets-con .assets-box .assets-l span {
+    padding-left: 10px;
+}
+#trust .assets-con .assets-box .assets-l img {
+    width: 43px;
+    height: auto;
+}
+#trust .assets-r {
+    background: #087CFD;
+    border: 1px solid #087CFD;
+    border-radius: 4px;
+    width:96px;
+    height:33px;
+    display:block;
+    font-size:16px;
+    color:#ffffff;
+    outline:none;
+}
+#trust .trusted {
+    background: #E0EEFF;
+    color:#087CFD;
+}
+/*我的*/
+.wallet-header{
+	margin-bottom:10px;
+}
+.miwallet-top{
+	padding-top: 47px;
+	height:218px;
+	background: url(../img/bj2@2x.png) no-repeat center #ffffff;
+    background-size:100% 100%;
+}
+.miwallet-top .Headportrait{
+	width:71px;
+	height:71px;
+	border-radius: 100%;
+	margin:0 auto;
+	background: url(../img/tx@2x.png) no-repeat center #fcfcfc;
+	background-size:contain;
+}
+.miwallet-top .person_W{
+	font-size:15px;
+	color:#FFFFFF;
+	display: block;
+	text-align: center;
+	padding-top:10px;
+}
+.miwallet-top .ewallet{
+	font-size:13px;
+	color:#a8d0fe;
+	display: block;
+	text-align: center;
+	padding-top:8px;
+}
+.wallelt-fun{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack:justify;
+    -moz-justify-content:space-around;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 68px;
+    color:#087cfd;
+    font-size:15px;
+    background-color: #ffffff ;
+}
+.wallelt-fun .Recharge{
+	width:49%;
+	text-align: center;
+	border-right:1px solid #969696;
+}
+.wallelt-fun .Put{
+	width:49%;
+	text-align: center;
+}
+.wallelt-nav .item-box {
+	height: 70px;
+	display: block;
+	line-height: 70px;
+	position: relative;
+	padding-left: 47px;
+	background: #fff;
+	color:#333;
+	font-size: 14px;
+}
+.wallelt-nav .item-box:after {
+	content: '';
+	position: absolute;
+	left:47px;
+	right:2px;
+	bottom:0;
+	height: 1px;
+	background: #f1f1f1;
+}
+.wallelt-nav .item-box:last-child:after {
+	content: initial;
+}
+.wallelt-nav .item-box .item-icon {
+	position: absolute;
+	left:14px;
+	top:28px;
+	height:17px;
+}
+.wallelt-nav .item-box .item-icon img{
+	height: 100%;
+	width: auto;
+	vertical-align: top;
+}
+.quit{
+	height:49px;
+	background-color:#fff;
+	margin:20px 0 23px 0;
+	text-align: center;
+}
+.quit .quit_out{
+	display:block;
+	font-size:15px;
+	color:#087cfd;
+	line-height:49px;
+}

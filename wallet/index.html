@@ -2,70 +2,187 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="viewport" content="" />
-    <script>
-        function resize(){
-            //将布局视口大小设为设备像素尺寸
-            var scale = 1 / window.devicePixelRatio;
-            document.querySelector('meta[name="viewport"]').setAttribute('content','width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
-            //动态设置html标签的font-size值,并按照设计图的尺寸/100。例如：750的设计图得到的值是7.5;做页面是测量设计图的px尺寸除以100得到rem尺寸;和淘宝的做法一样，文字字体大小不要使用rem换算
-            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
-        };
-        resize();
-        window.onresize = resize;
-    </script>
-    <title></title>
-    <!--检查app更新-->
-    <script src="js/update.js" type="text/javascript" charset="utf-8"></script>
-    <!--h5+提供的事件处理-->
-    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-    <!--公共样式和js-->
-    <link rel="stylesheet" type="text/css" href="css/public.css"/>
-    <script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+    <title>资产</title>
+    <link href="css/mui.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
 </head>
 <body>
-	<!--当前页面的css-->
-	<link rel="stylesheet" type="text/css" href="./css/assets.css"/>
-	<header class="head-bar">
-		<a href="#" class="back hide"></a>
-		<h1 class="title">资产</h1>
-		<span class="curve">菜单</span>
-	</header>
-	<nav class="tab-bar">
-		<a href="#" class="active">
-			<span class="icon assets"></span>
-			<span>资产</span>
-		</a>
-		<a href="#">
-			<span class="icon trade"></span>
-			<span>交易</span>
-		</a>
-		<a href="#">
-			<span class="icon trust"></span>
-			<span>信任</span>
-		</a>
-		<a href="#">
-			<span class="icon my"></span>
-			<span>我的</span>
-		</a>
+	<nav class="mui-bar mui-bar-tab nav-tab-bar">
+	    <a class="mui-tab-item mui-active" href="#assets">
+	        <span class="mui-icon assets"></span>
+	        <span class="mui-tab-label">资产</span>
+	    </a>
+	    <a class="mui-tab-item" href="#trade">
+	        <span class="mui-icon trade"></span>
+	        <span class="mui-tab-label">交易</span>
+	    </a>
+	    <a class="mui-tab-item" href="#trust">
+	        <span class="mui-icon trust"></span>
+	        <span class="mui-tab-label">信任</span>
+	    </a>
+	    <a class="mui-tab-item" href="#my">
+	        <span class="mui-icon my"></span>
+	        <span class="mui-tab-label">我的</span>
+	    </a>
 	</nav>
-	<section id="content" class="content">
-		<div class="assets-topbar">
-			<span class="pull-left">资产名称</span>
-			<span class="pull-right">余额</span>
-		</div>
-		<div class="assets-con">
-			<div class="assets-box">
-				<div class="assets-l">
-					<img src="./img/BTC@2x.png"/><span>BTC</span>
+	<div class="mui-content">
+	    <div id="assets" class="mui-control-content mui-active">
+			<header class="mui-bar mui-bar-nav header-bar">
+			    <h1 class="mui-title title">资产</h1>
+			    <a href="#" class="mui-pull-right record"><img src="img/record@2x.png"/></a>
+			</header>
+			<div class="wrap">
+			    <div class="assets-topbar">
+					<span class="pull-left">资产名称</span>
+					<span class="pull-right">余额</span>
 				</div>
-				<div class="assets-r">0.0019BTC</div>
+				<div class="assets-con">
+					<div class="assets-box">
+						<div class="assets-l">
+							<img src="img/BTC@2x.png"/><span>BTC</span>
+						</div>
+						<div class="assets-r">0.0019BTC</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</section>
-	<!--当前页面的js-->
-	<script src="./js/assets.js" type="text/javascript" charset="utf-8"></script>
+		<div id="trade" class="mui-control-content">
+			<header class="mui-bar mui-bar-nav header-bar">
+			    <h1 class="mui-title title">交易</h1>
+			    <a href="#" class="mui-pull-right entrust">委托单</a>
+			</header>
+			<div class="wrap">
+				<!-- 买入 -->
+			    <div class="floor">
+			        <div class="sole">买入</div>
+			        <div>
+			            <label for="">请选择资产发行方</label>
+			            <!-- <select name="" id=""></select> -->
+			            <li class="item">
+			                <ul class="show">
+			                    <li>1</li>
+			                    <li>1</li>
+			                </ul>
+			            </li>
+			        </div>
+			        <div>
+			            <label for="">请选择资产</label>
+			            <li class="item">
+			                <ul class="show">
+			                    <li>1</li>
+			                    <li>1</li>
+			                </ul>
+			            </li>
+			        </div>
+			        <div>
+			            <label for="">请输入购买数量</label>
+			            <input type="number">
+			        </div>
+			    </div>
+			    <!-- 间隔线 -->
+			    <div class="line"></div>
+			    <!-- 卖出 -->
+			    <div class="floor">
+			        <div class="sole">卖出</div>
+			        <div>
+			            <label for="">请选择资产发行方</label>
+			            <li class="item">
+			                <ul class="show">
+			                    <li>1</li>
+			                    <li>1</li>
+			                </ul>
+			            </li>
+			        </div>
+			        <div>
+			            <label for="">请选择资产</label>
+			            <li class="item">
+			                <ul class="show">
+			                    <li>1</li>
+			                    <li>1</li>
+			                </ul>
+			            </li>
+			        </div>
+			        <div>
+			            <label for="">请输入购买数量</label>
+			            <input type="number">
+			        </div>
+			    </div>
+			    <input type="submit" value="提交" class="submit">
+			</div>
+		</div>
+		<div id="trust" class="mui-control-content">
+			<header class="mui-bar mui-bar-nav header-bar">
+			    <h1 class="mui-title title">信任</h1>
+			</header>
+			<div class="wrap">
+				<div class="assets-con">
+			        <div class="assets-box">
+			            <div class="assets-l">
+			                <img src="img/BTC@2x.png"/><span>BTC</span>
+			            </div>
+			            <input class="assets-r" type="button" value="信任"></input>
+			        </div>
+			    </div>
+			    <div class="assets-con">
+			        <div class="assets-box">
+			            <div class="assets-l">
+			                <img src="img/BTC@2x.png"/><span>ETC</span>
+			            </div>
+			            <input class="assets-r trusted" type="button" value="已信任"></input>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		<div id="my" class="mui-control-content">
+			<div class="wallet-header">
+			      <div class="miwallet-top">
+			      	   <div class="Headportrait"></div>
+			      	   <span class="person_W">个人钱包</span>
+			      	   <span class="ewallet">Type somethingIDFDX8304</span>
+			      </div>   
+			      <div class="wallelt-fun">
+			  		<span class="Recharge">充值</span>
+			  		<span class="Put">提现</span>
+			      </div>
+			</div>
+			<div class="wallelt-nav">
+				<a href="found" class="item-box">
+					<span class="item-icon"><img src="img/cj@2x.png"></span>
+					<span class="item-title">创建钱包</span>
+				</a>
+				<a href="import" class="item-box">
+					<span class="item-icon"><img src="img/dr@2x.png"></span>
+					<span class="item-title">导入钱包</span>
+				</a>
+				<a href="modify" class="item-box">
+					<span class="item-icon"><img src="img/xg@2x.png"></span>
+					<span class="item-title">修改密码</span>
+				</a>
+				<a href="help" class="item-box">
+					<span class="item-icon"><img src="img/bzfk@2x.png"></span>
+					<span class="item-title">帮助中心</span>
+				</a>
+				<a href="opinion" class="item-box">
+					<span class="item-icon"><img src="img/yjfk@2x.png"></span>
+					<span class="item-title">意见反馈</span>
+				</a>
+				<a href="about" class="item-box">
+					<span class="item-icon"><img src="img/gywm@2x.png"></span>
+					<span class="item-title">关于我们</span>
+				</a>
+			</div>
+			<div class="quit">
+			  	<span class="quit_out">退出</span>
+			</div>
+		</div>
+	</div>
+    <script src="js/mui.min.js"></script>
+    <script src="js/update.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
