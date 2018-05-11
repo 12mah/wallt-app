@@ -1,0 +1,31 @@
+.feedback {
+	width:92%;
+	margin:0 auto;
+	margin-top: 15px;
+	text-align: center;
+}
+.feedback textarea {
+	background: #FAFAFA;
+	border: 1px solid #DEDEDE;
+	border-radius: 4px;
+	width:100%;
+	height: 157px;
+	font-size: 14px;
+	color: #333;
+	letter-spacing: 0;
+}
+.feedback textarea::-webkit-input-placeholder{
+    color:#999;
+}
+.feedback .btn-submit {
+	width:88%;
+	height: 38px;
+	margin:0 auto;
+	margin-top: 26px;
+	background: #087CFD;
+	border: 1px solid #86BFFF;
+	border-radius: 6px;
+	font-size: 16px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}

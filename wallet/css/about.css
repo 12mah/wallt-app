@@ -1,0 +1,27 @@
+.about-box {
+	text-align: center;
+}
+.about-box .app-icon {
+	width: 104px;
+	margin:0 auto;
+	margin-top: 54px;
+}
+.about-box .app-icon img{
+	width:100%;
+	height: auto;
+}
+.about-box .app-version {
+	font-size: 15px;
+	color: #333333;
+	padding-top: 10px;
+	letter-spacing: 0;
+}
+.copyright {
+	position: fixed;
+	color:#999;
+	left:0;
+	right:0;
+	bottom:33px;
+	font-size: 13px;
+	text-align: center;
+}
