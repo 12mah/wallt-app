@@ -1,8 +1,4 @@
 mui.init();
-mui.plusReady(function(){
-	//仅支持竖屏显示
-	plus.screen.lockOrientation("portrait-primary");
-})
 (function($, doc) {
 	$.ready(function() {
 		var userPicker = new $.PopPicker();
@@ -54,3 +50,8 @@ mui.plusReady(function(){
 		commonTap(outAsset, userPicker);
 	})
 })(mui, document);
+mui.plusReady(function(){
+	//仅支持竖屏显示
+	plus.screen.lockOrientation("portrait-primary");
+})
+
