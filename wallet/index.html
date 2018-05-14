@@ -9,6 +9,8 @@
     <link href="css/mui.min.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="css/app.css"/>
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link href="css/mui.picker.css" rel="stylesheet" />
+	<link href="css/mui.poppicker.css" rel="stylesheet" />
 </head>
 <body>
 	<nav class="mui-bar mui-bar-tab nav-tab-bar">
@@ -61,22 +63,11 @@
 			        <div class="sole">买入</div>
 			        <div>
 			            <label for="">请选择资产发行方</label>
-			            <!-- <select name="" id=""></select> -->
-			            <li class="item">
-			                <ul class="show">
-			                    <li>1</li>
-			                    <li>1</li>
-			                </ul>
-			            </li>
+			            <li class="item" id="inInsure"></li>
 			        </div>
 			        <div>
 			            <label for="">请选择资产</label>
-			            <li class="item">
-			                <ul class="show">
-			                    <li>1</li>
-			                    <li>1</li>
-			                </ul>
-			            </li>
+			            <li class="item" id="inAsset"></li>
 			        </div>
 			        <div>
 			            <label for="">请输入购买数量</label>
@@ -90,21 +81,11 @@
 			        <div class="sole">卖出</div>
 			        <div>
 			            <label for="">请选择资产发行方</label>
-			            <li class="item">
-			                <ul class="show">
-			                    <li>1</li>
-			                    <li>1</li>
-			                </ul>
-			            </li>
+			            <li class="item" id="outInsure"></li>
 			        </div>
 			        <div>
 			            <label for="">请选择资产</label>
-			            <li class="item">
-			                <ul class="show">
-			                    <li>1</li>
-			                    <li>1</li>
-			                </ul>
-			            </li>
+			            <li class="item"  id="outAsset"></li>
 			        </div>
 			        <div>
 			            <label for="">请输入购买数量</label>
@@ -181,6 +162,8 @@
 		</div>
 	</div>
     <script src="js/mui.min.js"></script>
+    <script src="js/mui.picker.js"></script>
+	<script src="js/mui.poppicker.js"></script>
     <script src="js/update.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/index.js" type="text/javascript" charset="utf-8"></script>

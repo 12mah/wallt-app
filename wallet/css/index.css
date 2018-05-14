@@ -67,6 +67,7 @@
     font-size:14px;
     color:#666666;
     line-height:32px;
+    margin-top: 15px;
     display:flex;
     display: -webkit-box;
     display: -moz-box;
@@ -95,7 +96,7 @@
     background-color: #f1f1f1;
 }
 .submit {
-    width: 30%;
+    width: 80%;
     height: 40px;
     background-color: #087CFD;
     box-shadow: none;
@@ -131,6 +132,8 @@
     float: right;
     font-size:14px;
     color:#666666;
+    text-indent: 8px;
+    overflow: hidden;
     appearance:none;
     -moz-appearance:none;
     -webkit-appearance:none;
@@ -138,6 +141,7 @@
 }
 .floor .item {
     background:url('../img/_@2x.png') no-repeat right 8px center;
+    background-size: 12px 5px;
 }
 .floor .item .show {
     display:none;
@@ -159,7 +163,7 @@
 .floor .item ul li:hover {
     background-color: red;
 }
-/*信任*/
+
 #trust .assets-con .assets-box {
     display: -webkit-box;
     display: -moz-box;
